@@ -1,0 +1,6 @@
+.description { display: none; }
+.option:checked + .description { display: block; }
+.type-account {
+    display: flex;
+    flex-direction: column;
+}
