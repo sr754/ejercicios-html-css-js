@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+}
+
+.contenedor1 {
+    background-color: black;
+}
+
+.contenedor2 {
+    background-color: rgb(76, 74, 74);
+}
+
+.contenedor3 {
+    background-color: rgb(144, 140, 140);
+}
+
+.div_1 {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.div_2 {
+    width: 80px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+.div_3 {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.rojo {
+    background-color: red;
+    cursor: pointer;
+}
+
+.azul {
+    background-color: blue;
+    cursor: wait;
+}
+
+.verde {
+    background-color: green;
+    cursor: all-scroll;
+}
+
+.amarillo {
+    background-color: yellow;
+    cursor: zoom-in;
+}
+
+.naranja {
+    background-color: orange;
+    cursor: zoom-out;
+}
