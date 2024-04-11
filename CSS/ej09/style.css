@@ -1,0 +1,362 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.sol {
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+    position: absolute;
+    clip-path: circle(50vh at 0 50%);
+    z-index: 1;
+}
+
+.planeta,
+.nombre-planeta {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.planeta {
+    border-radius: 50%;
+    top: 50%;
+    z-index: 2;
+}
+
+.nombre-planeta {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    z-index: 2;
+}
+
+.mercurio .nombre-planeta {
+    bottom: 20px; 
+    font-size: 13px;
+}
+
+.venus .nombre-planeta {
+    bottom: 20px; 
+    font-size: 20px;
+}
+
+.tierra .nombre-planeta {
+    bottom: 25px; 
+    font-size: 20px;
+}
+
+.marte .nombre-planeta {
+    bottom: 15px; 
+    font-size: 20px;
+}
+
+.jupiter .nombre-planeta {
+    bottom: 60px; 
+    font-size: 25px;
+}
+
+.saturno .nombre-planeta {
+    bottom: 35px; 
+    font-size: 20px;
+}
+
+.urano .nombre-planeta {
+    bottom: 30px; 
+    font-size: 20px;
+}
+
+.neptuno .nombre-planeta {
+    bottom: 30px; 
+    font-size: 20px;
+}
+
+.mercurio {
+    background-color: gray;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: -10vh;
+    animation: orbitaMercurio 8s linear infinite;
+}
+
+.mercurio-orbita {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 125vh;
+    height: 135vh;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+@keyframes orbitaMercurio {
+    from {
+        transform: rotate(0deg) translateX(70vh) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(70vh) rotate(-360deg);
+    }
+}
+
+.venus {
+    background-color: orange;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: -10vh;
+    animation: orbitaVenus 20s linear infinite;
+}
+
+.venus-orbita {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 155vh;
+    height: 165vh;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+@keyframes orbitaVenus {
+    from {
+        transform: rotate(0deg) translateX(85vh) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(85vh) rotate(-360deg);
+    }
+}
+
+.tierra {
+    background-color: blue;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 50%;
+    left: -10vh;
+    animation: orbitaTierra 30s linear infinite;
+}
+
+.tierra-orbita {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 185vh;
+    height: 195vh;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+@keyframes orbitaTierra {
+    from {
+        transform: rotate(0deg) translateX(100vh) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(100vh) rotate(-360deg);
+    }
+}
+
+.luna-orbita {
+    position: absolute;
+    top: -60%;
+    left: -70%;
+    transform: translate(-50%, -50%);
+    width: 160px; 
+    height: 160px; 
+    /* border: 2px solid white; */
+    border-radius: 50%;
+    animation: orbitaLuna 10s linear infinite; 
+}
+
+.luna {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: gray; 
+    border-radius: 50%; 
+    top: 0; 
+    left: 80px; 
+    transform-origin: center; 
+    animation: orbitaLuna 5s linear infinite; 
+    z-index: 3; 
+}
+
+@keyframes orbitaLuna {
+    from {
+        transform: rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg); 
+    }
+}
+
+.marte {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    left: -10vh;
+    animation: orbitaMarte 60s linear infinite;
+}
+
+.marte-orbita {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 215vh;
+    height: 225vh;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+@keyframes orbitaMarte {
+    from {
+        transform: rotate(0deg) translateX(115vh) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(115vh) rotate(-360deg);
+    }
+}
+
+.jupiter {
+    background-color: brown;
+    height: 150px;
+    width: 150px;
+    left: -10vh;
+    animation: orbitaJupiter 378s linear infinite;
+}
+
+.jupiter-orbita {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 245vh;
+    height: 255vh;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+@keyframes orbitaJupiter {
+    from {
+        transform: rotate(0deg) translateX(125vh) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(125vh) rotate(-360deg);
+    }
+}
+
+
+.saturno {
+    background-color: rgb(165, 155, 42);
+    height: 90px;
+    width: 90px;
+    left: -10vh;
+    animation: orbitaSaturno 930s linear infinite;
+    z-index: 2;
+}
+
+.anillo {
+    position: absolute;
+    width: 140px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(15deg);
+    z-index: 1; 
+}
+
+.saturno-orbita {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 290vh;
+    height: 305vh;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+@keyframes orbitaSaturno {
+    from {
+        transform: rotate(0deg) translateX(150vh) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(150vh) rotate(-360deg);
+    }
+}
+
+.urano {
+    background-color: rgb(93, 179, 225);
+    height: 80px;
+    width: 80px;
+    left: -10vh;
+    animation: orbitaUrano 2600s linear infinite;
+}
+
+.urano-orbita {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 320vh;
+    height: 335vh;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+@keyframes orbitaUrano {
+    from {
+        transform: rotate(0deg) translateX(165vh) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(165vh) rotate(-360deg);
+    }
+}
+
+.neptuno {
+    background-color: rgb(21, 130, 255);
+    height: 80px;
+    width: 80px;
+    left: -10vh;
+    animation: orbitaNeptuno 5600s linear infinite;
+}
+
+.neptuno-orbita {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 350vh;
+    height: 365vh;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+@keyframes orbitaNeptuno {
+    from {
+        transform: rotate(0deg) translateX(180vh) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(180vh) rotate(-360deg);
+    }
+}
+
+
