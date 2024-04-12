@@ -76,72 +76,80 @@ html {
 }
 
 .mercurio {
-    background-color: gray;
+    background: radial-gradient(circle, #8e8c91 40%, #5c5b5e 100%);
     height: 50px;
     width: 50px;
     position: absolute;
     top: 50%;
-    left: -10vh;
+    left: 0;
+    margin-top: -25px; 
+    margin-left: -25px; 
     animation: orbitaMercurio 8s linear infinite;
 }
 
 .mercurio-orbita {
     position: absolute;
     top: 50%;
+    left: 0;
     transform: translate(-50%, -50%);
     width: 125vh;
-    height: 135vh;
+    height: 125vh;
     border: 2px solid white;
     border-radius: 50%;
 }
 
 @keyframes orbitaMercurio {
     from {
-        transform: rotate(0deg) translateX(70vh) rotate(0deg);
+        transform: rotate(0deg) translateX(62.5vh) rotate(0deg);
     }
-
     to {
-        transform: rotate(360deg) translateX(70vh) rotate(-360deg);
+        transform: rotate(360deg) translateX(62.5vh) rotate(-360deg);
     }
 }
 
 .venus {
-    background-color: orange;
-    height: 60px;
+    background: radial-gradient(circle, #edd2a4 40%, #8f5227 100%);
+    height: 60px; 
     width: 60px;
     position: absolute;
     top: 50%;
-    left: -10vh;
-    animation: orbitaVenus 20s linear infinite;
+    left: 0;
+    margin-top: -25px; 
+    margin-left: -30px;
+    animation: orbitaVenus 10s linear infinite; 
 }
 
 .venus-orbita {
     position: absolute;
     top: 50%;
+    left: 0; 
     transform: translate(-50%, -50%);
-    width: 155vh;
-    height: 165vh;
-    border: 2px solid white;
+    width: 150vh; 
+    height: 150vh;
+    border: 2px solid white; 
     border-radius: 50%;
 }
 
 @keyframes orbitaVenus {
     from {
-        transform: rotate(0deg) translateX(85vh) rotate(0deg);
+        transform: rotate(0deg) translateX(75vh) rotate(0deg); 
     }
-
     to {
-        transform: rotate(360deg) translateX(85vh) rotate(-360deg);
+        transform: rotate(360deg) translateX(75vh) rotate(-360deg); 
     }
 }
 
+
 .tierra {
-    background-color: blue;
+    background: radial-gradient(circle, #3d72b4 30%, #336 60%, #1b3b6f 70%, #0a1d37 100%);
     height: 70px;
     width: 70px;
     position: absolute;
     top: 50%;
-    left: -10vh;
+    left: 0;
+    margin-top: -25px; 
+    margin-left: -35px;
+
     animation: orbitaTierra 30s linear infinite;
 }
 
@@ -149,8 +157,8 @@ html {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 185vh;
-    height: 195vh;
+    width: 180vh;
+    height: 180vh;
     border: 2px solid white;
     border-radius: 50%;
 
@@ -158,11 +166,11 @@ html {
 
 @keyframes orbitaTierra {
     from {
-        transform: rotate(0deg) translateX(100vh) rotate(0deg);
+        transform: rotate(0deg) translateX(90vh) rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg) translateX(100vh) rotate(-360deg);
+        transform: rotate(360deg) translateX(90vh) rotate(-360deg);
     }
 }
 
@@ -201,10 +209,12 @@ html {
 }
 
 .marte {
-    background-color: red;
+    background: radial-gradient(circle, #ff4b3e 30%, #8b2e16 100%);
     height: 50px;
     width: 50px;
-    left: -10vh;
+    left: 0;
+    margin-top: -25px; 
+    margin-left: -40px;
     animation: orbitaMarte 60s linear infinite;
 }
 
@@ -212,14 +222,45 @@ html {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 215vh;
-    height: 225vh;
+    width: 205vh;
+    height: 205vh;
     border: 2px solid white;
     border-radius: 50%;
 
 }
 
 @keyframes orbitaMarte {
+    from {
+        transform: rotate(0deg) translateX(105vh) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(105vh) rotate(-360deg);
+    }
+}
+
+.jupiter {
+    background: radial-gradient(circle, #bcafb5 10%, #8d7b71 30%, #837e6b 50%, #d4ab8c 70%, #ecd2b0 90%);
+    height: 150px;
+    width: 150px;
+    left: 0;
+    margin-top: -25px; 
+    margin-left: -45px;
+    animation: orbitaJupiter 378s linear infinite;
+}
+
+.jupiter-orbita {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 235vh;
+    height: 235vh;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+@keyframes orbitaJupiter {
     from {
         transform: rotate(0deg) translateX(115vh) rotate(0deg);
     }
@@ -229,83 +270,61 @@ html {
     }
 }
 
-.jupiter {
-    background-color: brown;
-    height: 150px;
-    width: 150px;
-    left: -10vh;
-    animation: orbitaJupiter 378s linear infinite;
-}
-
-.jupiter-orbita {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 245vh;
-    height: 255vh;
-    border: 2px solid white;
-    border-radius: 50%;
-
-}
-
-@keyframes orbitaJupiter {
-    from {
-        transform: rotate(0deg) translateX(125vh) rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg) translateX(125vh) rotate(-360deg);
-    }
-}
-
 
 .saturno {
-    background-color: rgb(165, 155, 42);
+    background: radial-gradient(circle, #cec6a6 20%, #b1a083 80%);
     height: 90px;
     width: 90px;
-    left: -10vh;
+    left: 0;
+    margin-top: -25px; 
+    margin-left: -50px;
     animation: orbitaSaturno 930s linear infinite;
     z-index: 2;
 }
 
 .anillo {
     position: absolute;
-    width: 140px;
-    height: 30px;
-    border: 1px solid white;
+    width: 150px; 
+    height: 150px; 
+    border: 20px solid rgba(255, 255, 255, 0.7); 
     border-radius: 50%;
+    box-sizing: border-box;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(15deg);
-    z-index: 1; 
+    transform: translate(-50%, -50%);
+    z-index: 1000; 
 }
+
 
 .saturno-orbita {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 290vh;
-    height: 305vh;
+    width: 279vh;
+    height: 279vh;
     border: 2px solid white;
     border-radius: 50%;
+    z-index: 1;
 
 }
 
 @keyframes orbitaSaturno {
     from {
-        transform: rotate(0deg) translateX(150vh) rotate(0deg);
+        transform: rotate(0deg) translateX(140vh) rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg) translateX(150vh) rotate(-360deg);
+        transform: rotate(360deg) translateX(140vh) rotate(-360deg);
     }
 }
 
 .urano {
-    background-color: rgb(93, 179, 225);
+    background: radial-gradient(circle, #1bb6b6 20%, #69c8ec 100%);
     height: 80px;
     width: 80px;
-    left: -10vh;
+    left: 0;
+    margin-top: -25px; 
+    margin-left: -50px;
     animation: orbitaUrano 2600s linear infinite;
 }
 
@@ -313,8 +332,8 @@ html {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 320vh;
-    height: 335vh;
+    width: 314vh;
+    height: 314vh;
     border: 2px solid white;
     border-radius: 50%;
 
@@ -322,19 +341,21 @@ html {
 
 @keyframes orbitaUrano {
     from {
-        transform: rotate(0deg) translateX(165vh) rotate(0deg);
+        transform: rotate(0deg) translateX(158vh) rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg) translateX(165vh) rotate(-360deg);
+        transform: rotate(360deg) translateX(158vh) rotate(-360deg);
     }
 }
 
 .neptuno {
-    background-color: rgb(21, 130, 255);
+    background: radial-gradient(circle, #2d7dd2 30%, #1e3f8f 70%);
     height: 80px;
     width: 80px;
-    left: -10vh;
+    left: 0;
+    margin-top: -25px; 
+    margin-left: -55px;
     animation: orbitaNeptuno 5600s linear infinite;
 }
 
@@ -342,8 +363,8 @@ html {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 350vh;
-    height: 365vh;
+    width: 340vh;
+    height: 340vh;
     border: 2px solid white;
     border-radius: 50%;
 
@@ -351,11 +372,11 @@ html {
 
 @keyframes orbitaNeptuno {
     from {
-        transform: rotate(0deg) translateX(180vh) rotate(0deg);
+        transform: rotate(0deg) translateX(172vh) rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg) translateX(180vh) rotate(-360deg);
+        transform: rotate(360deg) translateX(172vh) rotate(-360deg);
     }
 }
 
