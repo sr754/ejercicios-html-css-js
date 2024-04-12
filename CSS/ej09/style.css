@@ -222,8 +222,8 @@ html {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 205vh;
-    height: 205vh;
+    width: 206vh;
+    height: 206vh;
     border: 2px solid white;
     border-radius: 50%;
 
@@ -253,8 +253,8 @@ html {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 235vh;
-    height: 235vh;
+    width: 237vh;
+    height: 237vh;
     border: 2px solid white;
     border-radius: 50%;
 
