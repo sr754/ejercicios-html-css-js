@@ -1,0 +1,14 @@
+#boton {
+    margin-bottom: 10px;
+}
+
+#contenedor img {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+}
+
+.controles {
+    margin-top: 10px;
+}
