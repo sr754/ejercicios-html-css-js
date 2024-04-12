@@ -1,0 +1,59 @@
+table {
+    width: 100%;
+    text-align: center;
+}
+
+.div_1 {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div_2 {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.div_3 {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rojo {
+    background-color: red;
+    cursor: pointer;
+}
+
+.azul {
+    background-color: blue;
+    cursor: wait;
+}
+
+.verde {
+    background-color: green;
+    cursor: all-scroll;
+}
+
+.amarillo {
+    background-color: yellow;
+    cursor: zoom-in;
+}
+
+.naranja {
+    background-color: orange;
+    cursor: zoom-out;
+}
