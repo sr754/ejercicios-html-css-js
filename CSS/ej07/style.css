@@ -1,0 +1,109 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+
+.header {
+    font-weight: bold;
+}
+
+.label {
+    text-align: right;
+    font-weight: bold;
+    grid-column: 1;
+}
+
+.div_1,
+.div_2,
+.div_3 {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.div_1:hover,
+.div_2:hover,
+.div_3:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.rotacion input[type="checkbox"]:checked+div {
+    transform: rotate(45deg);
+}
+
+
+.div_2,
+.div_2b {
+    border-radius: 10px;
+}
+
+.div_3,
+.div_3b {
+    border-radius: 50%;
+}
+
+.div_1b,
+.div_2b,
+.div_3b {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.rotacion2 input[type="radio"]:checked+div {
+    transform: rotate(45deg);
+}
+
+.rotacion2 input[type="radio"]:checked+div:hover {
+    transform: rotate(45deg) translateY(-10px);
+}
+
+.rotacion2 input[type="radio"]:not(:checked)+div:hover {
+    transform: translateY(-10px);
+}
+
+.rojo {
+    background-color: red;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+
+.azul {
+    background-color: blue;
+    cursor: wait;
+    border: 3px dotted red;
+}
+
+.verde {
+    background-color: green;
+    cursor: all-scroll;
+    border: 3px dashed blue;
+}
+
+.amarillo {
+    background-color: yellow;
+    cursor: zoom-in;
+    border: 3px solid green;
+}
+
+.naranja {
+    background-color: orange;
+    cursor: zoom-out;
+    border: 3px double yellow;
+}
