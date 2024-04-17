@@ -1,0 +1,8 @@
+.fondo-imagen {
+    background-image: url('amarillo.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 450px; 
+    width: 450px; 
+}
