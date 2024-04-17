@@ -1,0 +1,77 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    grid-gap: 10px; 
+    margin-top: 20px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; 
+    
+}
+
+.header {
+    font-weight: bold;
+}
+
+.label {
+    text-align: right;
+    font-weight: bold;
+    grid-column: 1; 
+}
+
+.div_1, .div_2, .div_3 {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(45deg);
+    margin-bottom: 15px;
+}
+
+.div_1:hover, .div_2:hover, .div_3:hover {
+
+    transform: rotate(0deg);
+
+}
+
+.div_2 {
+    border-radius: 10px;
+}
+
+.div_3 {
+    border-radius: 50%;
+}
+
+.rojo {
+    background-color: red;
+    cursor: pointer;
+    border: 3px solid transparent; 
+}
+
+.azul {
+    background-color: blue;
+    cursor: wait;
+    border: 3px dotted red; 
+}
+
+.verde {
+    background-color: green;
+    cursor: all-scroll;
+    border: 3px dashed blue; 
+}
+
+.amarillo {
+    background-color: yellow;
+    cursor: zoom-in;
+    border: 3px solid green; 
+}
+
+.naranja {
+    background-color: orange;
+    cursor: zoom-out;
+    border: 3px double yellow; 
+}
